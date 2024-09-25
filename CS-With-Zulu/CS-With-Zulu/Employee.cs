@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CS_With_Zulu
 {
-    public abstract class Employee
+    public abstract class Employee : IPay
 
     {
         
@@ -23,10 +23,10 @@ namespace CS_With_Zulu
 
         public override string ToString()
         {
-            return $"{Id} - {FirstName} {LastName}, "+
-                   $"Birth: {BirthDate}, " +
-                   $"Hiring: {HiringDate}, " +
-                   $"Is active: {IsActive}";
+            return $"\t{Id} - {FirstName} {LastName}, \n"+
+                   $"\tBirth: {BirthDate} \n" +
+                   $"\tHiring: {HiringDate} \n" +
+                   $"\tIs active: {IsActive} ";
         }
     }
 }
