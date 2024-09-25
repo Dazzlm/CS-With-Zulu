@@ -7,7 +7,7 @@
 
         public float Quantity { get; set; }
 
-        public Decimal Price { get; set; }
+        public decimal Price { get; set; }
         public decimal GetValueToPay()
         {
             return Price * (decimal)Quantity;
